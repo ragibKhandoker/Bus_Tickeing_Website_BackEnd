@@ -1,4 +1,3 @@
-// db.js
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
@@ -10,7 +9,7 @@ const sequelize = new Sequelize(
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: 'postgres',
-    logging: console.log, // enable SQL logging to help debugging
+    logging: false
   }
 );
 
